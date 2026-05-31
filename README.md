@@ -1,18 +1,14 @@
-Markdown
-# Farm Village Simulator (Team 05)
+Farm Village Simulator (Team 05)
+Run
+[Important Note for Windows Users]
+If you are using Windows, running the game via the default Command Prompt (cmd) may cause Emoji and UI rendering issues. To ensure a seamless gameplay experience, we strongly recommend using Windows Terminal.
 
-## Run
+NOTE: The --platform linux/amd64 flag must be used for both docker pull and docker run. The provided scripts (run.sh, run_shell.sh) already include this flag.
 
-**[Important Note for Windows Users]**
-If you are using Windows, running the game via the default Command Prompt (cmd) may cause Emoji and UI rendering issues. To ensure a seamless gameplay experience, we strongly recommend using **Windows Terminal**.
-
-**NOTE:** The `--platform linux/amd64` flag must be used for both `docker pull` and `docker run`. The provided scripts (`run.sh`, `run_shell.sh`) already include this flag.
-
-### (1) Pull Docker Image
-
+(1) Pull Docker Image
 Open your terminal and execute the following command to pull the required image:
 
-```bash
+Bash
 docker pull --platform linux/amd64 chwoong/team_00_project:0.1.0
 (If you are using a new custom Docker image, please follow the naming convention: user_id/team_00_project:x.x.x)
 
