@@ -1,28 +1,34 @@
-Farm Village Simulator (Team 05)
-Run
-[Important Note for Windows Users]
-If you are using Windows, running the game via the default Command Prompt (cmd) may cause Emoji and UI rendering issues. To ensure a seamless gameplay experience, we strongly recommend using Windows Terminal.
+<img width="2128" height="989" alt="image" src="https://github.com/user-attachments/assets/2be78c76-c2d3-4e6c-903c-2c0a5c2d263a" /># Farm Village Simulator (Team 05)
 
-NOTE: The --platform linux/amd64 flag must be used for both docker pull and docker run. The provided scripts (run.sh, run_shell.sh) already include this flag.
+## Run
 
-(1) Pull Docker Image
+**[Important Note for Windows Users]**
+If you are using Windows, running the game via the default Command Prompt (cmd) may cause Emoji and UI rendering issues. To ensure a seamless gameplay experience, we strongly recommend using **Windows Terminal**.
+
+**NOTE:** The `--platform linux/amd64` flag must be used for both `docker pull` and `docker run`. The provided scripts (`run.sh`, `run_shell.sh`) already include this flag.
+
+### (1) Pull Docker Image
+
 Open your terminal and execute the following command to pull the required image:
-
+```bash
 docker pull --platform linux/amd64 chwoong/team_00_project:0.1.0
-(If you are using a new custom Docker image, please follow the naming convention: user_id/team_05_project:x.x.x)
-
+```
 (2) Run the app
 Option A — Run automatically:
-
+```bash
 bash scripts/run.sh
+```
 This script starts the container and immediately launches the game executable (build/main).
 
 Option B — Enter the container first, then run manually:
-
+```bash
 bash scripts/run_shell.sh
+```
 This command starts the container and drops you into a bash shell. Once inside the container, you can run the application manually:
-
+```bash
 ./build/main
+```
+
 Game System
 (1) Controls
 Movement: Use W / A / S / D keys to move. Press Q to quit the game.
