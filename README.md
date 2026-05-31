@@ -1,4 +1,6 @@
 Markdown
+# Farm Village Simulator (Team 05)
+
 ## Run
 
 **[Important Note for Windows Users]**
@@ -7,6 +9,7 @@ If you are using Windows, running the game via the default Command Prompt (cmd) 
 **NOTE:** The `--platform linux/amd64` flag must be used for both `docker pull` and `docker run`. The provided scripts (`run.sh`, `run_shell.sh`) already include this flag.
 
 ### (1) Pull Docker Image
+
 Open your terminal and execute the following command to pull the required image:
 
 ```bash
@@ -28,7 +31,6 @@ This command starts the container and drops you into a bash shell. Once inside t
 
 Bash
 ./build/main
-
 Game System
 (1) Controls
 Movement: Use W / A / S / D keys to move. Press Q to quit the game.
