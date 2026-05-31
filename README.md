@@ -8,24 +8,20 @@ NOTE: The --platform linux/amd64 flag must be used for both docker pull and dock
 (1) Pull Docker Image
 Open your terminal and execute the following command to pull the required image:
 
-Bash
 docker pull --platform linux/amd64 chwoong/team_00_project:0.1.0
 (If you are using a new custom Docker image, please follow the naming convention: user_id/team_05_project:x.x.x)
 
 (2) Run the app
 Option A — Run automatically:
 
-Bash
 bash scripts/run.sh
 This script starts the container and immediately launches the game executable (build/main).
 
 Option B — Enter the container first, then run manually:
 
-Bash
 bash scripts/run_shell.sh
 This command starts the container and drops you into a bash shell. Once inside the container, you can run the application manually:
 
-Bash
 ./build/main
 Game System
 (1) Controls
@@ -78,7 +74,9 @@ Lv.7 Winery: Ferment Strawberries and Watermelons in oak barrels to produce Prem
 (6) Random Events (Disasters & Environment)
 Each day, there is a chance for unpredictable weather events that significantly affect farm management.
 
-Drought & Heatwave: * Stage 1 (Drought): Crop growth is halted. Players must manually use '💧 Water' from their inventory to keep them alive.
+Drought & Heatwave:
+
+Stage 1 (Drought): Crop growth is halted. Players must manually use '💧 Water' from their inventory to keep them alive.
 
 Stage 2 (Heatwave): All planted crops are instantly destroyed, and the scorched earth prevents new planting.
 
