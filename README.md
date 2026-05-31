@@ -7,14 +7,23 @@ If you are using Windows, running the game via the default Command Prompt (cmd) 
 
 **NOTE:** The `--platform linux/amd64` flag must be used for both `docker pull` and `docker run`. The provided scripts (`run.sh`, `run_shell.sh`) already include this flag.
 
-### (1) Pull Docker Image
+### (1) Installation
+To start the project, first clone the repository to your local machine:
+```bash
+git clone https://github.com/2026-Spring-PM/Team_05_demo
+```
+After cloning, you must enter the directory to execute the scripts correctly:
+```bash
+cd Team_05_demo
+```
+### (2) Pull Docker Image
 
 Open your terminal and execute the following command to pull the required image:
 
 ```bash
 docker pull --platform linux/amd64 chwoong/team_00_project:0.1.0
 ```
-(2) Run the app
+### (3) Run the app
 Option A — Run automatically:
 ```bash
 bash scripts/run.sh
